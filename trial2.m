@@ -91,7 +91,7 @@ for t = t_array(1:end-1)
     dh_NI = (f_NI_in - f_NI_gen - NI_spill)./ A_NI;
     dh_SI = (f_SI_in - f_SI_gen - SI_spill)./ A_SI;
     
-    % 12. Use Euler’s method to take a step in time (17).
+    % 12. Use Eulerâ€™s method to take a step in time (17).
     h_NI_array(end + 1) = h_NI + dh_NI; %#ok<*SAGROW>
     h_SI_array(end + 1) = h_SI + dh_SI;
     
@@ -116,7 +116,7 @@ title('North Island lake level vs time (2035)')
 xlabel('Time in year 2035 (hours)')
 ylabel('Height of North Island lake (m)')
 
-% Minimum lake levels (c)
+% Minimum lake levels
 disp(min(h_SI_array))
 disp(min(h_NI_array))
 
